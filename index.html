@@ -1,9 +1,13 @@
+<!-- ========================= -->
+<!-- ARCHIVO 1: index.html -->
+<!-- ========================= -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Básica</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,15 +15,19 @@
             margin: 0;
             padding: 0;
         }
+
         header {
             background-color: #333;
             color: white;
             padding: 10px 0;
             text-align: center;
         }
+
         main {
             padding: 20px;
+            text-align: center;
         }
+
         footer {
             background-color: #333;
             color: white;
@@ -29,27 +37,56 @@
             width: 100%;
             bottom: 0;
         }
+
+        .boton {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .boton:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>Bienvenido a mi página</h1>
-    </header>
-    
-    <main>
-        <h2>Acerca de mí</h2>
-        <p>¡Hola! Soy jhordy.</p>
 
-        <h2>Mis intereses</h2>
-        <ul>
-            <li>Diseño gráfico</li>
-            <li>Desarrollo web</li>
-            <li>Arquitectura sostenible</li>
-        </ul>
-    </main>
+<header>
+    <h1>Bienvenido a mi página</h1>
+</header>
 
-    <footer>
-        <p>&copy; 2026 Mi Página Web. Todos los derechos reservados.</p>
-    </footer>
+<main>
+    <h2>Acerca de mí</h2>
+    <p>¡Hola! Soy jhordy.</p>
+
+    <h2>Mis intereses</h2>
+    <ul style="list-style:none; padding:0;">
+        <li>Diseño gráfico</li>
+        <li>Desarrollo web</li>
+        <li>Arquitectura sostenible</li>
+    </ul>
+
+    <!-- BOTÓN NUEVO -->
+    <button class="boton" onclick="irPagina2()">
+        Ir a página de Héctor
+    </button>
+</main>
+
+<footer>
+    <p>&copy; 2026 Mi Página Web. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+function irPagina2() {
+    window.location.href = "hector.html";
+}
+</script>
+
 </body>
 </html>
