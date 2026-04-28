@@ -5,29 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Básica</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }
+        header { background-color: #333; color: white; padding: 10px 0; text-align: center; }
+        main { padding: 20px; }
+        footer { background-color: #333; color: white; text-align: center; padding: 10px 0; position: fixed; width: 100%; bottom: 0; }
+        /* Estilo para el enlace */
+        .boton {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
             color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        main {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -35,19 +25,20 @@
     <header>
         <h1>Bienvenido a mi página</h1>
     </header>
-    
     <main>
         <h2>Acerca de mí</h2>
         <p>¡Hola! Soy jhordy.</p>
-
+        
         <h2>Mis intereses</h2>
         <ul>
             <li>Diseño gráfico</li>
             <li>Desarrollo web</li>
             <li>Arquitectura sostenible</li>
         </ul>
-    </main>
 
+        <!-- Enlace a la página de Elvis -->
+        <a href="elvis.html" class="boton">Ir a la página de Elvis</a>
+    </main>
     <footer>
         <p>&copy; 2026 Mi Página Web. Todos los derechos reservados.</p>
     </footer>
